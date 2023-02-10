@@ -36,6 +36,8 @@ const fetchCountries = event => {
           card.innerHTML = '';
           list.innerHTML = listMarkup;
         } else if (data.length > 10) {
+          list.innerHTML = '';
+          card.innerHTML = '';
           Notify.info(
             'Too many matches found. Please enter a more specific name.'
           );
