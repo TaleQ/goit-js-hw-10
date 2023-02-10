@@ -7,5 +7,5 @@ const DEBOUNCE_DELAY = 300;
 
 searchBox.addEventListener(
   'input',
-  debounce(fetchCountries, [(wait = DEBOUNCE_DELAY)])
+  debounce(fetchCountries, [wait = DEBOUNCE_DELAY])
 );
